@@ -12,7 +12,6 @@
     <title>Select2 with pages demo</title>
 
     <link href="/public/supernova.min.css" rel="stylesheet" />
-    <link href="/public/pages.css" rel="stylesheet" />
     <link href="/public/pages-select2.css" rel="stylesheet" />
 
     <!-- Bootstrap Core CSS -->
@@ -65,6 +64,17 @@
               </div>
             </form>
 
+            <div class="col-sm-6">
+                            <div class="form-group form-group-default form-group-default-select2 required">
+                                <label for="InvoiceId">Invoice</label>
+                                <select class="form-control" id="InvoiceId" name="InvoiceId" placeholder="Select an invoice..." style="width: 100%;"><option value="81">August 01, 2016 - September 01, 2016</option>
+<option value="41">July 01, 2016 - August 01, 2016</option>
+<option selected="selected" value="21">June 01, 2016 - July 01, 2016</option>
+</select>
+                                <label class="error hidden">This field is required.</label>
+                            </div>
+                        </div>
+
 
           </div>
         </div>
@@ -90,9 +100,7 @@
       (function(window) {
         'use strict';
 
-        $('select').select2({
-          // minimumResultsForSearch: Infinity
-        });
+        $('select').select2({});
 
       })(window);
       </script>
