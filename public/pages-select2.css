@@ -84,7 +84,7 @@ select.full-width+.select2-container {
     background-image: none;
     border-radius: 2px;
     border: 1px solid rgba(0,0,0,0.07)!important;
-    padding: 2px 4px;
+    padding: 2px 9px;
     transition: border 0.2s linear 0s;
 }
 
